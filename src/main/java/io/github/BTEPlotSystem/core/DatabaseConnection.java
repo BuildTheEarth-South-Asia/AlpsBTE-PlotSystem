@@ -43,7 +43,7 @@ public class DatabaseConnection {
                 FileConfiguration config = github.BTEPlotSystem.BTEPlotSystem.getPlugin().getConfig();
 
                 connection = DriverManager.getConnection(
-                        "jdbc:mariadb://172.18.0.1:3306/" + config.getString("database.name"),
+                        "jdbc:mariadb://127.0.0.1/" + config.getString("database.name"),
                         config.getString("database.username"),
                         config.getString("database.password"));
 
