@@ -63,7 +63,7 @@ public class Utils {
     public static Location getSpawnPoint() {
         FileConfiguration config = BTEPlotSystem.getPlugin().getConfig();
 
-        return new Location(Bukkit.getWorld("Hub"),
+        return new Location(Bukkit.getWorld("world"),
                 config.getDouble("spawn-point.x"),
                 config.getDouble("spawn-point.y"),
                 config.getDouble("spawn-point.z"),
@@ -84,13 +84,13 @@ public class Utils {
     }
 
     // Servers
-    public final static String PLOT_SERVER = "ALPS-1";
+    public final static String PLOT_SERVER = "IN-2";
 
-    public final static String TERRA_SERVER = "ALPS-2";
+    public final static String TERRA_SERVER = "IN-2";
 
-    public final static String EVENT_SERVER = "ALPS-3";
+    public final static String EVENT_SERVER = "IN-3";
 
-    public final static String TEST_SERVER = "ALPS-4";
+    public final static String TEST_SERVER = "IN-4";
 
     // Integer Try Parser
     public static Integer TryParseInt(String someText) {
